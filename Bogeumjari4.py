@@ -201,9 +201,9 @@ col1, col2, col3, col4 = st.columns(4)
 with col1:
     house_price = st.number_input("주택 가격 (원)", value=600_000_000, step=10_000_000)
 with col2:
-    my_cash = st.number_input("내가 가진 돈 (원)", value=200_000_000, step=10_000_000)
+    my_cash = st.number_input("내가 가진 돈 (원)", value=220_000_000, step=10_000_000)
 with col3:
-    input_rate = st.number_input("입력 금리 (%)", value=4.8, step=0.05, min_value=0.1)
+    input_rate = st.number_input("입력 금리 (%)", value=4.9, step=0.05, min_value=0.1)
 with col4:
     loan_year = st.selectbox("대출 기간 (년)", [10, 20, 30, 40, 50], index=4)
 
@@ -249,7 +249,7 @@ else:
 
         col_salary_input, col_bonus_input = st.columns(2)
         with col_salary_input:
-            total_base_salary = st.number_input("💰 [입사일~신청일] 서류상 비과세를 제외한 '과세대상 급여/상여 총합' (원)", value=18_410_000, step=1_000_000)
+            total_base_salary = st.number_input("💰 [입사일~신청일] 서류상 비과세를 제외한 '과세대상 급여/상여 총합' (원)", value=24_066_935, step=1_000_000)
             st.caption(f"✍️ 증빙서류(명세표·임금대장)상 누적 과세대상 지급액: **{total_base_salary:,}원**")
         with col_bonus_input:
             st.markdown("**📄 제출 필수 증빙 서류 가이드 (택 1, 회사 직인 필수)**")
